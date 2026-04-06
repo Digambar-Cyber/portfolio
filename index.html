@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digambar — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Digambar<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="resume2026.pdf" download="Digambar_Pradhan_Resume.pdf" class="nav-resume-btn">
+          ⬇ Resume
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-blob"></div>
+    <div class="hero-blob2"></div>
+
+    <div class="hero-eyebrow">Available for freelance &amp; collaborations</div>
+
+    <h1 class="hero-name">
+      <span class="first">Digambar</span>
+      <span class="last">Pradhan.</span>
+    </h1>
+
+    <p class="hero-tagline">Full Stack Developer — crafting web experiences from Bhubaneswar, India</p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        View Projects
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <a href="resume2026.pdf" download="Digambar_Pradhan_Resume.pdf" class="btn-ghost">⬇ Download Resume</a>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-label">About Me</div>
+
+    <div class="about-grid">
+      <!-- Bio -->
+      <div class="about-text reveal">
+        <h2>Building things <em>that work</em><br>beautifully</h2>
+        <p>I'm a full-stack web developer passionate about creating clean, functional, and user-friendly digital experiences. From backend logic to polished frontends, I work across the entire stack.</p>
+        <p>Currently building <strong>Explore India</strong> — a PHP-based tour booking platform with automated email flows, cron-based reminders, and a complete booking management system.</p>
+        <p>I believe good code is readable code. Good design is invisible design. And great products are the intersection of both.</p>
+      </div>
+
+      <!-- Skill Cards -->
+      <div class="skills-grid reveal reveal-delay-2">
+        <div class="skill-card">
+          <span class="skill-icon">⚙️</span>
+          <h4>Backend</h4>
+          <p>PHP, MySQL, REST APIs, cron jobs, server config</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🎨</span>
+          <h4>Frontend</h4>
+          <p>HTML, CSS, JavaScript, responsive design</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🗄️</span>
+          <h4>Database</h4>
+          <p>MySQL, schema design, query optimisation</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🔧</span>
+          <h4>Tools</h4>
+          <p>Git, GitHub, PHPMailer, Razorpay, WhatsApp API</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="projects-header reveal">
+      <div class="section-label">Selected Work</div>
+      <h2>Projects I've built</h2>
+    </div>
+
+    <div class="projects-container reveal reveal-delay-1">
+
+      <!-- ── Project 01: Explore India ── -->
+      <div class="project-row" style="--row-accent: #e8c547" onclick="toggleProject('p1')">
+        <div class="project-number">01</div>
+        <div class="project-info">
+          <h3>Explore India</h3>
+          <p>A full-featured tour booking platform with end-to-end booking management, automated email notifications, OTP authentication, and cron-based trip reminders.</p>
+          <div class="project-tags">
+            <span class="tag">PHP 8.2</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">PHPMailer</span>
+            <span class="tag">WhatsApp API</span>
+            <span class="tag">Razorpay</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-actions" onclick="event.stopPropagation()">
+          <a href="https://explore-india750.wuaze.com" target="_blank" class="project-live-btn">● Live</a>
+          <a href="https://github.com/Digambar-Cyber" target="_blank" class="project-github-btn">GitHub ↗</a>
+          <div class="project-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+        <span class="project-badge badge-dev">Active</span>
+      </div>
+      <div class="project-expanded" id="p1">
+        <div class="expanded-grid">
+          <div class="expanded-section">
+            <h5>Key Features</h5>
+            <ul>
+              <li>User registration with OTP verification</li>
+              <li>Tour browsing and booking system</li>
+              <li>Admin booking management dashboard</li>
+              <li>Multi-vendor agency marketplace (RBAC)</li>
+            </ul>
+          </div>
+          <div class="expanded-section">
+            <h5>Automation</h5>
+            <ul>
+              <li>Cron-based trip reminder notifications</li>
+              <li>Post-trip review request emails</li>
+              <li>WhatsApp Cloud API notifications</li>
+              <li>Branded HTML email templates</li>
+            </ul>
+          </div>
+          <div class="expanded-section">
+            <h5>Architecture</h5>
+            <ul>
+              <li>Secure .env credential management</li>
+              <li>Normalised MySQL bookings schema</li>
+              <li>PHPMailer + SMTP integration</li>
+              <li>Chart.js admin analytics dashboard</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Project 02: FoodRush ── -->
+      <div class="project-row" style="--row-accent: #f97158" onclick="toggleProject('p2')">
+        <div class="project-number">02</div>
+        <div class="project-info">
+          <h3>FoodRush</h3>
+          <p>An online food ordering platform connecting customers with restaurants. Includes menu management, cart &amp; checkout, order tracking, and a restaurant owner dashboard.</p>
+          <div class="project-tags">
+            <span class="tag">PHP 8.2</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Razorpay</span>
+            <span class="tag">Google OAuth</span>
+          </div>
+        </div>
+        <div class="project-actions" onclick="event.stopPropagation()">
+          <span class="project-live-btn disabled">● Live Soon</span>
+          <a href="https://github.com/Digambar-Cyber" target="_blank" class="project-github-btn">GitHub ↗</a>
+          <div class="project-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+        <span class="project-badge badge-dev">Dev</span>
+      </div>
+      <div class="project-expanded" id="p2">
+        <div class="expanded-grid">
+          <div class="expanded-section">
+            <h5>Customer Features</h5>
+            <ul>
+              <li>Browse restaurants and menus</li>
+              <li>Add to cart and checkout</li>
+              <li>Order tracking and history</li>
+              <li>Wallet &amp; cashback system</li>
+            </ul>
+          </div>
+          <div class="expanded-section">
+            <h5>Restaurant Side</h5>
+            <ul>
+              <li>Menu item CRUD management</li>
+              <li>Incoming order dashboard</li>
+              <li>Order status updates</li>
+              <li>Sales overview</li>
+            </ul>
+          </div>
+          <div class="expanded-section">
+            <h5>Tech Highlights</h5>
+            <ul>
+              <li>4 dashboards (Admin / Restaurant / Customer / Delivery)</li>
+              <li>Google OAuth 2.0 login</li>
+              <li>PWA support + rule-based chatbot</li>
+              <li>15 database tables, REST API</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Project 03: Student Voting ── -->
+      <div class="project-row" style="--row-accent: #67e8a0" onclick="toggleProject('p3')">
+        <div class="project-number">03</div>
+        <div class="project-info">
+          <h3>Student Voting Management System</h3>
+          <p>A secure digital election platform for student body elections. Admins manage elections and candidates; students cast verified votes with real-time result tallying.</p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-actions" onclick="event.stopPropagation()">
+          <span class="project-live-btn disabled">● Live Soon</span>
+          <a href="https://github.com/Digambar-Cyber" target="_blank" class="project-github-btn">GitHub ↗</a>
+          <div class="project-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+        <span class="project-badge badge-live">Complete</span>
+      </div>
+      <div class="project-expanded" id="p3">
+        <div class="expanded-grid">
+          <div class="expanded-section">
+            <h5>Student Features</h5>
+            <ul>
+              <li>Secure student registration &amp; login</li>
+              <li>Browse candidates with profiles</li>
+              <li>One-vote enforcement per election</li>
+              <li>View live results after voting</li>
+            </ul>
+          </div>
+          <div class="expanded-section">
+            <h5>Admin Panel</h5>
+            <ul>
+              <li>Create and manage elections</li>
+              <li>Add/remove candidates</li>
+              <li>Set election time windows</li>
+              <li>View detailed result breakdown</li>
+            </ul>
+          </div>
+          <div class="expanded-section">
+            <h5>Security</h5>
+            <ul>
+              <li>Duplicate vote prevention logic</li>
+              <li>Admin authentication middleware</li>
+              <li>Tamper-proof vote recording</li>
+              <li>Audit-friendly DB schema</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TECH STACK
+  ════════════════════════════════════════════ -->
+  <section id="stack">
+    <div class="stack-inner">
+      <div class="section-label reveal">Tech Stack</div>
+      <h2 class="reveal" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.03em;">Tools I work with</h2>
+
+      <!-- Scrolling Marquee -->
+      <div class="tech-marquee-wrapper">
+        <div class="tech-marquee">
+          <div class="tech-pill"><span class="tech-dot"></span>PHP 8.2</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--coral)"></span>MySQL</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent2)"></span>JavaScript</div>
+          <div class="tech-pill"><span class="tech-dot"></span>HTML5</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:#67e8f9"></span>CSS3</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent3)"></span>PHPMailer</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--coral)"></span>Git</div>
+          <div class="tech-pill"><span class="tech-dot"></span>GitHub</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent2)"></span>REST API</div>
+          <div class="tech-pill"><span class="tech-dot"></span>Razorpay</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent3)"></span>WhatsApp API</div>
+          <div class="tech-pill"><span class="tech-dot"></span>Python</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent2)"></span>Azure</div>
+          <div class="tech-pill"><span class="tech-dot"></span>Bootstrap</div>
+          <!-- Duplicate set for seamless infinite loop -->
+          <div class="tech-pill"><span class="tech-dot"></span>PHP 8.2</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--coral)"></span>MySQL</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent2)"></span>JavaScript</div>
+          <div class="tech-pill"><span class="tech-dot"></span>HTML5</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:#67e8f9"></span>CSS3</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent3)"></span>PHPMailer</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--coral)"></span>Git</div>
+          <div class="tech-pill"><span class="tech-dot"></span>GitHub</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent2)"></span>REST API</div>
+          <div class="tech-pill"><span class="tech-dot"></span>Razorpay</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent3)"></span>WhatsApp API</div>
+          <div class="tech-pill"><span class="tech-dot"></span>Python</div>
+          <div class="tech-pill"><span class="tech-dot" style="background:var(--accent2)"></span>Azure</div>
+          <div class="tech-pill"><span class="tech-dot"></span>Bootstrap</div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row reveal reveal-delay-1">
+        <div class="stat-item">
+          <div class="stat-num">3<span>+</span></div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">29<span>+</span></div>
+          <div class="stat-label">Features (Explore India)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Lines of Code</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-label reveal" style="justify-content: center;">Contact</div>
+    <h2 class="reveal reveal-delay-1">Let's build<br><span class="outline">something.</span></h2>
+    <p class="reveal reveal-delay-2">Have a project in mind? Want to collaborate or just say hello? My inbox is always open.</p>
+
+    <div class="contact-links reveal reveal-delay-2">
+      <a href="https://github.com/Digambar-Cyber" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        GitHub
+      </a>
+      <a href="mailto:digambarpradhan2025@gmail.com" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/digambar-pradhan-944a092b6" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+        LinkedIn
+      </a>
+      <a href="resume2026.pdf" download="Digambar_Pradhan_Resume.pdf" class="contact-link contact-link-resume">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download Resume
+      </a>
+    </div>
+
+    <p class="email-display reveal reveal-delay-3">
+      or reach out directly → <a href="mailto:digambarpradhan2025@gmail.com">digambarpradhan2025@gmail.com</a>
+    </p>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer>
+    <p>© 2026 Digambar. Built with <span>HTML, CSS &amp; JS</span></p>
+    <p>Bhubaneswar, Odisha · India</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
